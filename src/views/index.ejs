@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../js/javascript.js"></script>
+</head>
+
+<body>
+
+<div class="container" id="container">
+
+    <h1>Todos</h1>
+    <p>Po wpisaniu nazwy i kliknięciu enter Todos powinien się wyskłać i wyświetlić poniżej</p>
+    
+    <form id="add_todo_form" action="/add_todo" method="POST">
+
+        <input type="text" name="add_todo_input" placeholder="ADD TODO"></input>
+      
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">TODOS</th>
+            </tr>
+        </thead>
+        <tbody id="todo_table">
+    
+        </tbody>
+        <form 
+            id="complete_todo_form" 
+            action="/complete_todo/"
+            method="POST"
+        >
+        </form>
+    </table>
+</div>
+
+</body>
+</html>
