@@ -1,25 +1,19 @@
 {
-  "name": "day9todoreact",
+  "name": "todok8s",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "ejs": "^3.0.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-layout": "^0.1.0",
     "mysql": "^2.17.1",
     "path": "^0.12.7",
     "router": "^1.3.3"
-  },
-  "devDependencies": {
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10",
-    "webpack-node-externals": "^1.7.2"
   }
 }
