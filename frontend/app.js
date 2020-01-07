@@ -1,8 +1,8 @@
 getToDos()
 
 function getToDos() {
-    var request = XMLHttpRequest();
-    var requestURL = '/get_todos'
+    var request = new XMLHttpRequest();
+    var requestURL = 'http://aaa.mzylowski.pl/get_todos'
     request.open('GET', requestURL)
     request.responseType = 'json'
     request.send()

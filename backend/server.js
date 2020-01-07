@@ -67,6 +67,6 @@ app.post('/complete_todo/:id', (req,res) => {
     })
 })
 
-app.listen(5000, () => {
-    console.log('App running at http://localhost:5000')
+app.listen(80, () => {
+    console.log('App running at http://localhost:80')
 })
