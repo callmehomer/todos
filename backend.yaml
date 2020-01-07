@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: jstodobackend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+     app: jstodobackend
+  template:
+    metadata:
+      labels:
+        app: jstodobackend
+    spec:
+      containers:
+      - name: jstodobackend
+        image: kamilhomer/jstodobackend:server
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
