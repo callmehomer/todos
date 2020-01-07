@@ -15,7 +15,7 @@ const pass = "password"
 function getConnection() {
     return mysql.createConnection({
         host: "localhost",
-        port: "8080",
+        port: "5000",
         user: "root",
         password: pass,
         database: "todo"
@@ -25,13 +25,7 @@ function getConnection() {
 const conn = getConnection()
 
 app.get('/', (req, res) => {
-  res.send('Hi');
-});
-
-app.get('/frontend/', (req, res) => {
-    res.send(path.join('/frontend/index.html'));
-    res.sendFile(path.join('/frontend/index.html'));
-
+  res.send('To do app server');
 });
 
 app.get('/get_todos', (req, res) => {
@@ -73,6 +67,6 @@ app.post('/complete_todo/:id', (req,res) => {
     })
 })
 
-app.listen(5500, () => {
-    console.log('App running at http://localhost:5500')
+app.listen(5000, () => {
+    console.log('App running at http://localhost:5000')
 })
